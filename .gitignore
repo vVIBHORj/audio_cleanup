@@ -1,0 +1,45 @@
+# Audio files & Large media
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.ogg
+*.aac
+*.wma
+
+# Model weights & Checkpoints
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Temporary and OS files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# HuggingFace / Model caches
+.cache/
+models/

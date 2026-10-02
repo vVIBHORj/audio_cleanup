@@ -1,0 +1,49 @@
+INPUT
+-----
+File: war-intercept.wav
+Duration: 279.00 s
+Sample rate: 16000 Hz
+Channels: 1
+Bit depth: PCM_16
+Peak: 0.72009 (-2.85 dBFS)
+RMS: 0.13773 (-17.22 dBFS)
+Nyquist frequency: 8000.0 Hz
+
+ANALYSIS
+--------
+Dominant frequency regions: Core speech concentrated in 250 - 3400 Hz (96.84% power); 630-800 Hz & 2.5-3.15 kHz preserved without EQ distortion
+Low-frequency rumble detected: YES (Sub-85 Hz handling/drone components, power < 0.02%)
+50 Hz hum detected: NO (Prominence 0.37 dB; no 50/100 Hz notch applied)
+1.4 kHz interference confirmed: YES (Exact peak 1399.90 Hz, prominence +41.2 dB, CV=0.14 persistent across speech & silence)
+Other tonal interference: 2600.1 Hz carrier tone, 2799.8 Hz & 4200.2 Hz harmonics (CV <= 0.15)
+
+PROCESSING
+----------
+High-pass frequency: 85.0 Hz (Butterworth 4th-order, zero-phase)
+Low-pass frequency: 6000.0 Hz (Butterworth 4th-order, zero-phase)
+Noise reduction: Moderate spectral subtraction (prop_decrease=0.60, measured reduction = 6.07 dB)
+Notch filters: Narrowband IIR (Q=35.0) at [1399.9, 2600.1, 2799.8, 4200.2] Hz
+Normalization: Peak normalized to -1.00 dBFS (0.89125 linear)
+
+OUTPUT
+------
+Output: test2_audio.wav
+Duration: 279.00 s
+Sample rate: 16000 Hz
+Channels: 1 (Mono)
+Peak: 0.89125 (-1.00 dBFS)
+RMS: 0.12753 (-17.89 dBFS)
+
+OBJECTIVE COMPARISON
+--------------------
+Original Noise Floor: 0.10475 (-19.60 dBFS) | SNR: 4.28 dB
+Cleaned Noise Floor:  0.05208 (-25.67 dBFS) | SNR: 11.23 dB
+Noise Floor Reduction: 6.07 dB
+SNR Improvement: +6.95 dB
+
+QUALITY CONTROL
+---------------
+Clipping introduced: NO (0 samples clipped, 0)
+Speech-band preserved: YES (250 Hz - 3400 Hz core speech untouched by broadband cuts)
+Major artifacts detected: NO (No metallic ringing, no robotic voice, no speech gating)
+Overall processing status: SUCCESS

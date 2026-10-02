@@ -1,0 +1,9 @@
+Frequency Analysis Report
+=========================
+Input: war-intercept.wav
+Sample rate: 16000 Hz (Nyquist: 8000.0 Hz)
+Duration: 279.00 s
+1.4 kHz Oscillation Detected: YES (Exact: 1399.90 Hz, Prominence: +49.2 dB, CV: 0.14)
+Associated Carrier Harmonics: 700.2 Hz, 2600.1 Hz, 2799.8 Hz, 4200.2 Hz
+Sub-80 Hz rumble: 0.02% total power (no speech fundamentals detected)
+Above 7 kHz: predominantly flat digitizer hiss

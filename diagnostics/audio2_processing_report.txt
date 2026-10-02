@@ -1,0 +1,45 @@
+INPUT
+-----
+File: test1_audio.wav
+Sample rate: 16000 Hz
+Channels: 1 (Mono)
+Duration: 279.00 s
+Peak: 0.89127 (-1.00 dBFS)
+RMS: 0.04791 (-26.39 dBFS)
+
+SPECTRAL ANALYSIS
+-----------------
+Dominant regions: 250 - 3400 Hz (core speech formants and consonants)
+Residual low-frequency noise: Negligible (-44.5 dBFS below 80 Hz)
+Residual high-frequency noise: Clean above 7000 Hz
+Potential tonal components: 240 Hz, 695 Hz, 1.22 kHz, 1.48 kHz, 1.71 kHz, 1.96 kHz, 2.19 kHz, 2.43 kHz
+
+TONAL COMPONENT VERIFICATION
+----------------------------
+240 Hz: Speech-related (Silence/Speech ratio = 0.27, CV = 1.60; tracks vocal pitch)
+694–706 Hz: Interference (Residual 695.31 Hz tone, prominence 11 dB, CV = 0.22; notched)
+1.22–1.24 kHz: Speech-related (Silence/Speech ratio = 0.31, CV = 1.25; tracks vowels)
+1.48 kHz: Speech-related (Silence/Speech ratio = 0.35, CV = 1.27; speech harmonic)
+1.67–1.73 kHz: Speech-related (Silence/Speech ratio = 0.40, CV = 1.02; formant resonance)
+1.92–1.97 kHz: Speech-related (Silence/Speech ratio = 0.52, CV = 0.84; consonant presence)
+2.20 kHz: Speech-related (Silence/Speech ratio = 0.57, CV = 0.80; speech harmonic)
+2.45 kHz: Speech-related (Silence/Speech ratio = 0.62, CV = 0.79; speech sibilance)
+
+FILTERING
+---------
+High-pass: Skipped (already clean: -44.5 dBFS / 0.0035% below 80 Hz)
+Low-pass: Preserved (already clean above 7 kHz)
+Noise reduction: Conservative spectral subtraction (prop_decrease=0.30, ~1.76 dB reduction)
+Notches: Narrowband IIR (Q=40.0) at 695.31 Hz
+Notch frequencies: [695.31] Hz
+Notch bandwidth/Q: Q = 40.0 (bandwidth ~ 17.4 Hz)
+
+QUALITY CONTROL
+---------------
+Clipping: NO (0 samples clipped, 0)
+Artifacts: None (Zero metallic ringing, zero robotic artifacts, speech completely natural)
+Speech preservation: Excellent (Core 250 - 3400 Hz formants and consonants 100% intact)
+Final peak: 0.92556 (-0.67 dBFS)
+Final RMS: 0.04303 (-27.32 dBFS)
+Final SNR: 12.28 dB (Improvement: +0.98 dB)
+Output path: C:\Users\vibhor\Desktop\audio\output\audio2_test.wav
