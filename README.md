@@ -1,3 +1,5 @@
+# Indian Army's Western Command CHALLENGE 2
+--------------------------------------------------------------
 # Intercepted Audio Denoising & Transcription Pipeline
 
 A minimal, reliable local Python pipeline that denoises intercepted audio and generates timestamped speech-to-text transcriptions using `noisereduce` and `faster-whisper`.
